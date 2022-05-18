@@ -12,12 +12,14 @@ function BookList() {
 }
 
 const Book = () => {
+  const title =  "Book Image"
+const author = "John Mason"
   return (
     <article className="book">
      
       <Image></Image>
-      <Title/>
-      <Author/>
+      <h1>{title}</h1>
+      <h4>{author}</h4>
     </article>
   );
 };
@@ -31,8 +33,7 @@ const Image = () => {
   );
 };
 
-const Title = () =>  <h1>Book Image</h1>
-const Author = () =>  <h4>John Mason</h4>
+
 
 reactDOM.render(<BookList />, document.getElementById("root"));
 
