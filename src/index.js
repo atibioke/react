@@ -22,14 +22,7 @@ const books = [
 function BookList() {
   return (
     <section className="booklist">
-      <Book title={firstBook.title} author={firstBook.author} img={firstBook.img}>
-        <p>
-          lorem ipsum dolor sit amet, consectetur
-
-
-        </p>
-      </Book>
-      <Book title={secondBook.title} author={secondBook.author} img={secondBook.img}/>
+      
     </section>
   );
 }
