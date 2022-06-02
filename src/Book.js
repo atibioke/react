@@ -1,17 +1,20 @@
 import React from 'react';
 
+
+
 const Book = (props) => {
     const { img, title, author } = props;
   
   
     const clickHandler = (e) => {
       alert(title)
-    }
+    };
   
     const beforeClick = () => {
       console.log(title);
-    }
+    };
   
+
     return (
       <article className="book" onMouseOver={beforeClick}>
         <img src={img} alt="" />
@@ -22,6 +25,7 @@ const Book = (props) => {
         </button>
       </article>
     );
+
   };
 
   export default Book
